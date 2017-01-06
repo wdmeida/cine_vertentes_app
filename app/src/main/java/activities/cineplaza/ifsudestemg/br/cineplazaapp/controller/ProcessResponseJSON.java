@@ -7,6 +7,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import activities.cineplaza.ifsudestemg.br.cineplazaapp.dao.MovieDAO;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.model.Movie;
 
 /**
@@ -35,11 +36,11 @@ public class ProcessResponseJSON {
     }//isValidRespost
 
     //Obtém todas as informações dos filmes recebidas na consulta.
-    public List<Movie> getAllMovies(JSONObject object){
+    public List<Movie> getAllMovies(){
         try {
             JSONObject json = new JSONObject(this.respost);
             this.movies = new ArrayList<>();
-            JSONArray jsonMovies = new JSONArray(object.toString());
+            JSONArray jsonMovies = json.getJSONArray("movies");
             for(int position = 0; position < jsonMovies.length(); position++){
                 JSONObject j = jsonMovies.getJSONObject(position);
                 Movie movie = writeInfoMovie(j);

@@ -2,8 +2,8 @@ package activities.cineplaza.ifsudestemg.br.cineplazaapp.activities;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,6 +16,7 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.listener.PauseOnScrollListener;
 
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.R;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.View.MoviesAdapter;
@@ -23,11 +24,13 @@ import activities.cineplaza.ifsudestemg.br.cineplazaapp.controller.ProcessRespon
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.controller.RequestTask;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.dao.MovieDAO;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.model.Movie;
+import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnItemClick;
 
 public class ListaFilmesActivity extends AppCompatActivity {
     //Define a url de acesso a api que obtém os dados dos filmes em cartaz no Cine Plaza Barbacena.
-    private final static String ENDERECO_URL = "http://cinevertentes.herokuapp.com/api/v1/cineplaza/movies";
+    private final static String ENDERECO_URL = "http://cineplazabqapi.herokuapp.com/movies";
     private List<Movie> movies;
     private ListView listMovies;
     private TextView weekTextView;
