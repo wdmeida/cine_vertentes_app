@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_view">
+
+    <ImageView
+        android:id="@+id/image_movie"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:src="@null" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_movie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="italic|bold"
+            android:textSize="@dimen/text_name_movie"
+            android:text=""
+            android:textColor="@color/color_text_main"/>
+
+        <TextView
+            android:id="@+id/genre_movie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/color_text_secundary"/>
+
+        <TextView
+            android:id="@+id/duration_movie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/color_text_secundary"/>
+
+        <TextView
+            android:id="@+id/classification_movie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/color_text_secundary"/>
+
+        <TextView
+            android:id="@+id/movie_hour"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/color_text_secundary"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
