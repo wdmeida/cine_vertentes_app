@@ -1,4 +1,4 @@
-package activities.cineplaza.ifsudestemg.br.cineplazaapp.View;
+package activities.cineplaza.ifsudestemg.br.cineplazaapp.adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;

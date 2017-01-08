@@ -16,21 +16,17 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.listener.PauseOnScrollListener;
 
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.R;
-import activities.cineplaza.ifsudestemg.br.cineplazaapp.View.MoviesAdapter;
+import activities.cineplaza.ifsudestemg.br.cineplazaapp.adapter.MoviesAdapter;
+import activities.cineplaza.ifsudestemg.br.cineplazaapp.constants.Constants;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.controller.ProcessResponseJSON;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.controller.RequestTask;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.dao.MovieDAO;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.model.Movie;
-import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnItemClick;
 
 public class ListaFilmesActivity extends AppCompatActivity {
-    //Define a url de acesso a api que obtém os dados dos filmes em cartaz no Cine Plaza Barbacena.
-    private final static String ENDERECO_URL = "http://cineplazabqapi.herokuapp.com/movies";
     private List<Movie> movies;
     private ListView listMovies;
     private TextView weekTextView;
@@ -61,7 +57,7 @@ public class ListaFilmesActivity extends AppCompatActivity {
         weekTextView = (TextView) findViewById(R.id.week_movies);
         try {
             RequestTask requestTask = new RequestTask();
-            String respost = requestTask.execute(ENDERECO_URL).get();
+            String respost = requestTask.execute(Constants.URL_API_CINE_PLAZA).get();
             ProcessResponseJSON processResponseJSON = new ProcessResponseJSON(respost);
             if(processResponseJSON.isValidRespost()){
                 //Obtém a lista de filmes e a semana da programação.
