@@ -1,10 +1,31 @@
 <resources>
+    <!-- Principais da aplicação. -->
     <string name="app_name">Cine Plaza BQ</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_search">Pesquisar</string>
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Fechar</string>
+
+    <!-- Labels dos itens que ficarão no menu de navegação. -->
+    <string name="nav_item_home">Início</string>
+    <string name="nav_item_cineplaza">Cine Plaza</string>
+    <string name="nav_item_cinegloria">Cine Glória</string>
+    <string name="nav_item_exit">Sair</string>
+
+    <!-- Navigation drawer item labels -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_cineplaza</item>
+        <item>@string/nav_item_cinegloria</item>
+        <item>@string/nav_item_exit</item>
+    </string-array>
+
     <string name="title_activity_main">MainActivity</string>
-    <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- Labels das informações dos filmes -->
     <string name="label_duration">Duração: </string>
     <string name="label_genre">Gênero: </string>
     <string name="label_classification">Classinficação: </string>
     <string name="label_exibition">Exibição: </string>
+
 </resources>

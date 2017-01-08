@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#241F22</color>
-    <color name="colorPrimaryDark">#120111</color>
-    <color name="colorAccent">#1C1832</color>
+    <color name="colorPrimary">#9C27B0</color>
+    <color name="colorPrimaryDark">#7B1FA2</color>
+    <color name="colorPrimaryLight">#E1BEE7</color>
+    <color name="colorAccent">#009688</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
     <color name="background_week">#331D2C</color>
     <color name="background_item">#5e3651</color>
     <color name="background_view">#2F2D39</color>
