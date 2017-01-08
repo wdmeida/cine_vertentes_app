@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -20,6 +21,7 @@ import java.util.List;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.R;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.adapter.MoviesAdapter;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.constants.Constants;
+import activities.cineplaza.ifsudestemg.br.cineplazaapp.controller.ConnectionStatus;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.controller.ProcessResponseJSON;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.controller.RequestTask;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.dao.MovieDAO;
@@ -57,6 +59,7 @@ public class ListaFilmesActivity extends AppCompatActivity {
         weekTextView = (TextView) findViewById(R.id.week_movies);
         try {
             RequestTask requestTask = new RequestTask();
+
             String respost = requestTask.execute(Constants.URL_API_CINE_PLAZA).get();
             ProcessResponseJSON processResponseJSON = new ProcessResponseJSON(respost);
             if(processResponseJSON.isValidRespost()){

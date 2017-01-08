@@ -11,7 +11,7 @@ import activities.cineplaza.ifsudestemg.br.cineplazaapp.dao.MovieDAO;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.model.Movie;
 
 /**
- * Created by wagner on 07/09/16.
+ * Processa as informações recebidas fazendo o parser do JSON e retornando uma lista com as informações dos filmes.
  */
 public class ProcessResponseJSON {
     private String respost;

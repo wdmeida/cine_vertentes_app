@@ -18,7 +18,7 @@ import java.net.URL;
 import activities.cineplaza.ifsudestemg.br.cineplazaapp.activities.ListaFilmesActivity;
 
 /**
- * Created by wagner on 02/09/16.
+ * AsyncTask responsável por efetuar a conexão com a internet e obter as informações sobre os filmes em cartaz.
  */
 public class RequestTask extends AsyncTask<String, Void, String> {
 

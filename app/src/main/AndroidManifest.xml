@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="activities.cineplaza.ifsudestemg.br.cineplazaapp">
 
-    <!-- Libera o acesso do dispositivo a internet e a salvar dados em memória secundária. -->
+    <!-- Libera o acesso a internet, salvar dados em memória secundária e acesso as informações de estado de rede. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
