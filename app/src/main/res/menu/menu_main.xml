@@ -2,6 +2,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="activities.cineplaza.ifsudestemg.br.cineplazaapp.activities.MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource" />
+
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
