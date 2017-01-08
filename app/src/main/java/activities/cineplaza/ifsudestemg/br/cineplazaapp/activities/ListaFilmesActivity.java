@@ -107,7 +107,8 @@ public class ListaFilmesActivity extends AppCompatActivity {
     //Salva as informações no banco de dados.
     private void saveAllMoviesDatabase(List<Movie> movies){
         MovieDAO movieDAO = new MovieDAO(ListaFilmesActivity.this);
-        //Apaga o banco antigo. ********* Modificar depois.
+
+        //TODO Apaga o banco antigo. ********* Modificar depois.
         movieDAO.deleteAll();
 
         for (Movie m: movies) movieDAO.insert(m);
