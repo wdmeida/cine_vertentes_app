@@ -1,4 +1,4 @@
-package activities.cineplaza.ifsudestemg.br.cineplazaapp.activities;
+package activities.cineplaza.ifsudestemg.br.cineplazaapp.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,5 +42,5 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) return true;
 
         return super.onOptionsItemSelected(item);
-    }
+    }//onOptionsItemSelected()
 }//class MainActivity

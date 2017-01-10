@@ -1,4 +1,4 @@
-package activities.cineplaza.ifsudestemg.br.cineplazaapp.activities;
+package activities.cineplaza.ifsudestemg.br.cineplazaapp.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

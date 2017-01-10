@@ -15,7 +15,7 @@
         android:theme="@style/MyMaterialTheme">
 
         <activity
-            android:name=".activities.ListaFilmesActivity"
+            android:name=".activity.ListaFilmesActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,8 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.MainActivity" />
-        <activity android:name=".activities.LoginActivity"></activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.LoginActivity"></activity>
     </application>
 
 </manifest>

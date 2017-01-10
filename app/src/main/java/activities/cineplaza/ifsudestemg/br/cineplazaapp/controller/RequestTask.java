@@ -1,21 +1,13 @@
 package activities.cineplaza.ifsudestemg.br.cineplazaapp.controller;
 
-import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-
-import activities.cineplaza.ifsudestemg.br.cineplazaapp.activities.ListaFilmesActivity;
 
 /**
  * AsyncTask responsável por efetuar a conexão com a internet e obter as informações sobre os filmes em cartaz.

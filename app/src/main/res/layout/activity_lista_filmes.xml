@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
-    tools:context=".activities.ListaFilmesActivity">
+    tools:context=".activity.ListaFilmesActivity">
 
     <TextView
         android:id="@+id/week_movies"

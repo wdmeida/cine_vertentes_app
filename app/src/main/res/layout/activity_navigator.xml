@@ -5,7 +5,7 @@
     android:id="@+id/activity_navigator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="activities.cineplaza.ifsudestemg.br.cineplazaapp.activities.NavigatorActivity">
+    tools:context="activities.cineplaza.ifsudestemg.br.cineplazaapp.activity.NavigatorActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
