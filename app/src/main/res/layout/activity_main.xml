@@ -36,7 +36,7 @@
 
     <fragment
         android:id="@+id/fragment_navigation_drawer"
-        android:name="activities.cineplaza.ifsudestemg.br.cineplazaapp.activity.FragmentDrawer"
+        android:name="activities.cineplaza.ifsudestemg.br.cinevertentes.activity.FragmentDrawer"
         android:layout_width="@dimen/nav_drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
