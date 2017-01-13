@@ -18,15 +18,17 @@ public class ConnectionStatus {
         if (manager != null) {
             NetworkInfo networkInfo = manager.getActiveNetworkInfo();
 
-            // Caso não exista nenhum tipo de conexão retorna false.
-            if (networkInfo == null) return false;
+            // Caso não exista conexão, retorna false.
+            if (networkInfo == null || !networkInfo.isConnected()) return false;
 
             // Obtêm o tipo de conexão.
             int netType = networkInfo.getType();
 
             // Verifica se a conexão é do tipo WiFi ouo Moble e retorna true se estiver conectado ou false caso contrário.
-            if (netType == ConnectivityManager.TYPE_VPN || netType == ConnectivityManager.TYPE_MOBILE) return networkInfo.isConnected();
-            else return false;
+            if (netType == ConnectivityManager.TYPE_VPN || netType == ConnectivityManager.TYPE_MOBILE)
+                return true;
+            else
+                return false;
         }
         return false;
     }//isOnline

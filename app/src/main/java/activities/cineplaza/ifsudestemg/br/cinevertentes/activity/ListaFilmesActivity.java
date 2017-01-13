@@ -32,7 +32,6 @@ public class ListaFilmesActivity extends AppCompatActivity {
     private TextView weekTextView;
     private ImageLoader mImageLoader;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,8 +70,6 @@ public class ListaFilmesActivity extends AppCompatActivity {
             movies = new MovieDAO(ListaFilmesActivity.this).getAll();
             weekTextView.setText("Semana de" + movies.get(0).getWeek());
         }
-
-
 
         //Define as configurações do ImageLoader, responsável por gerenciar o download e exibição das imagens.
         mImageLoader = ImageLoader.getInstance();

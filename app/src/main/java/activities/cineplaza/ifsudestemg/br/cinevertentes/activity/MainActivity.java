@@ -1,5 +1,6 @@
 package activities.cineplaza.ifsudestemg.br.cinevertentes.activity;
 
+import android.content.Intent;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -47,6 +48,17 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         return super.onOptionsItemSelected(item);
     }//onOptionsItemSelected()
 
+    private void listarFilmes(){
+        Intent listarFilmesIntent = new Intent(MainActivity.this, ListaFilmesActivity.class);
+        startActivity(listarFilmesIntent);
+    }
+
+    //Valida e executa a opção escolhida no menu.
     @Override
-    public void onDrawerItemSelected(View view, int position) { }//onDrawerItemSelected()
+    public void onDrawerItemSelected(View view, int position) {
+        switch (position){
+            case 0: break;
+            case 1: listarFilmes(); break;
+        }
+    }//onDrawerItemSelected()
 }//class MainActivity

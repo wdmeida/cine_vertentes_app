@@ -17,7 +17,7 @@
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
 
         <activity
-            android:name="activities.cineplaza.ifsudestemg.br.cinevertentes.activity.LoginActivity"
+            android:name="activities.cineplaza.ifsudestemg.br.cinevertentes.activity.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,8 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name="activities.cineplaza.ifsudestemg.br.cinevertentes.activity.ListaFilmesActivity" />
-        <activity android:name="activities.cineplaza.ifsudestemg.br.cinevertentes.activity.MainActivity"></activity>
+        <activity android:name="activities.cineplaza.ifsudestemg.br.cinevertentes.activity.LoginActivity" />
 
         <!-- Activity do Facebook para realizar login na aplicação. -->
         <activity android:name="com.facebook.FacebookActivity"
