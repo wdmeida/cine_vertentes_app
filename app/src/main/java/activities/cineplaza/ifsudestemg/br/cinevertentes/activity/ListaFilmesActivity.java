@@ -39,8 +39,14 @@ public class ListaFilmesActivity extends AppCompatActivity {
 
         //Associa a classe que o ButterKnife associará as Views.
         ButterKnife.bind(this);
-        initComponentsActivity();
+        //initComponentsActivity();
     }//onCreate()
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        initComponentsActivity();
+    }
 
     @Override
     protected void onDestroy() {

@@ -27,12 +27,13 @@
     <string name="label_genre">Gênero: </string>
     <string name="label_classification">Classinficação: </string>
     <string name="label_exibition">Exibição: </string>
+    <string name="description_image">Imagem de cartaz do filme em exibição.</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- Login Facebook -->
-    <string name="facebook_app_id"></string>
-    <string name="fb_login_protocol_scheme"></string>
+    <string name="facebook_app_id">1096428680441146</string>
+    <string name="fb_login_protocol_scheme">fb1096428680441146</string>
 
 </resources>
