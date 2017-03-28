@@ -1,46 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:id="@+id/button_plaza"
+        android:text="@string/button_plaza"
+        android:textSize="18sp" />
 
-        <!-- Cria o container onde será inserido a barra de ferramentas. -->
-
-        <LinearLayout
-            android:id="@+id/container_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <include
-                android:id="@+id/toolbar"
-                layout="@layout/toolbar" />
-
-        </LinearLayout>
-
-        <FrameLayout
-            android:id="@+id/container_body"
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
-
-    </LinearLayout>
-
-    <fragment
-        android:id="@+id/fragment_navigation_drawer"
-        android:name="activities.cineplaza.ifsudestemg.br.cinevertentes.activity.FragmentDrawer"
-        android:layout_width="@dimen/nav_drawer_width"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:layout="@layout/fragment_navigation_drawer"
-        tools:layout="@layout/fragment_navigation_drawer"/>
-
-</android.support.v4.widget.DrawerLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_gloria"
+        android:text="@string/button_gloria"
+        android:enabled="false"
+        android:textSize="18sp" />
+</LinearLayout>

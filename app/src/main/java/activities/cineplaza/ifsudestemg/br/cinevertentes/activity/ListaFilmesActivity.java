@@ -36,17 +36,14 @@ public class ListaFilmesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_filmes);
-
-        //Associa a classe que o ButterKnife associará as Views.
         ButterKnife.bind(this);
-        //initComponentsActivity();
     }//onCreate()
 
     @Override
     protected void onStart() {
         super.onStart();
         initComponentsActivity();
-    }
+    }//onStart()
 
     @Override
     protected void onDestroy() {
@@ -54,7 +51,7 @@ public class ListaFilmesActivity extends AppCompatActivity {
         //Limpa a memória para evitar estouro da mesma e problemas de segurança.
         mImageLoader.clearMemoryCache();
         mImageLoader.stop();
-    }
+    }//onDestroy()
 
     //Obtêm as referências dos componentes que serão utilizados da activity e define as configurações da mesma.
     private void initComponentsActivity(){
