@@ -1,25 +1,25 @@
 # Cine Vertentes PWA
 
-## Projeto
+## Project
 
-App desenvolvido para listar os filmes em cartas nos cinemas da região dos Campos das Vertentes, na zona da mata de Minas Gerais. O app, lista os filmes em cartaz no [Cine Plaza](https://www.cineplaza.com.br) e [Cine Glória](http://www.cinegloria.com) localizados nas respectivas cidades de Barbacena e São João Del Rey.
+App developed to list the films in the cinemas of the region of "Campos das Vertentes", in the "Zona da Mata" of Minas Gerais. The app lists the movies on the [Cine Plaza](https://www.cineplaza.com.br) and [Cine Glória](http://www.cinegloria.com) located in the respectives cities of Barbacena and São João Del Rey.
 
-O app é um PWA, o que possibilita que o mesmo possa ser instalado em dispositivos móveis e atualmente encontra-se em fase de modificação do layout e adaptação para que possa funcionar completamente offline.
+The app is a PWA, which allows it to be installed on mobile devices and is currently the process of modifying the layout and adaptation so that it can function completely offline.
 
-O mesmo pode ser acessado através do link abaixo:
+The same can be accessed through the link below:
 
 * [Cine Vertentes PWA](http://cine-vertentes-app.firebaseapp.com/) 
 
 ## API
 
-O app consome as informações obtidas em uma API desenvolvida em Node JS, através das seguintes URLs:
+The app consumes the information obtained an API developed in Node JS through the following URLs:
 
 * [Cine Gloria](https://cinevertentes.herokuapp.com/api/v1/cinegloria/movies)
 * [Cine Plaza](https://cinevertentes.herokuapp.com/api/v1/cineplaza/movies)
 
 ## APP
 
-O app foi desenvolvido utilizando as seguintes tecnologias:
+The app was developed using the following technologies:
 
 * [React](https://facebook.github.io/react/)
 * [Redux](http://redux.js.org/)
@@ -29,12 +29,14 @@ O app foi desenvolvido utilizando as seguintes tecnologias:
 
 ## Executando o Projeto
 
-Entre no diretório do app, cine-vertentes-app e instale as dependências:
+Enter the app directory, cine-strings-app and install dependencies:
 
 ```$ npm install```
 
-Após intalar as dependências, execute a aplicação com o seguinte comando:
+After you install the dependencies, run the application with the following command:
 
 ```$ npm run dev```
 
-Abra o navegador, e acesse ```http://localhost:4200``` para abrir a aplicação.
+Open the browser, and go to the address below to access the application:
+
+```http://localhost:4200``` 
