@@ -27,7 +27,7 @@ The app was developed using the following technologies:
 * [Material-UI](https://material-ui-1dab0.firebaseapp.com/)
 * [Bootstrap](http://getbootstrap.com/)
 
-## Executando o Projeto
+## Running the project
 
 Enter the app directory, cine-strings-app and install dependencies:
 
