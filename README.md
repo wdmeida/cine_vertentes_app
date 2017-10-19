@@ -6,10 +6,6 @@ App developed to list the films in the cinemas of the region of "Campos das Vert
 
 The app is a PWA, which allows it to be installed on mobile devices and is currently the process of modifying the layout and adaptation so that it can function completely offline.
 
-The same can be accessed through the link below:
-
-* [Cine Vertentes PWA](http://cine-vertentes-app.firebaseapp.com/) 
-
 ## API
 
 The app consumes the information obtained an API developed in Node JS through the following URLs:
