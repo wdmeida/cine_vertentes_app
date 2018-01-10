@@ -25,12 +25,6 @@ export default props => (
           <li>
             <NavLink to="/cinegloria">Cine Glória</NavLink>
           </li>
-<<<<<<< HEAD
-=======
-          <li>
-            <NavLink to="/cineplaza">Cine Plaza</NavLink>          
-          </li>
->>>>>>> 5ce2e53426b8791847e0e3a281b751e0434d61d1
         </ul>
       </div>
     </div>
