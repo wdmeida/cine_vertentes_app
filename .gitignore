@@ -55,14 +55,21 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+<<<<<<< HEAD
 # Yarn Lock file
 yarn.lock
 
 # package.json Lock file
 package-lock.json
 
+=======
+>>>>>>> 5ce2e53426b8791847e0e3a281b751e0434d61d1
 # dotenv environment variables file
 .env
 
 
 # End of https://www.gitignore.io/api/node
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5ce2e53426b8791847e0e3a281b751e0434d61d1

@@ -20,18 +20,38 @@ export default props => (
         </div>
       </Grid>
       <Grid cols='12 5 6'>
-        <Item title='Gênero:' description={props.genre}/>
+        <Item 
+          title='Gênero:' 
+          description={props.genre}
+        />
         <Divider />
-        <Item title='Exibição:' description={props.exibition}/>
+        <Item 
+          title='Exibição:' 
+          description={props.exibition}
+        />
         <Divider />
-        <Item title='Datas:' description={props.week_exibition}/>
+        <Item 
+          title='Datas:' 
+          description={props.week_exibition}
+        />
         <Divider />
-        <Item title='Duração:' description={props.duration}/>
+        <Item 
+          title='Duração:' 
+          description={props.duration}
+        />
         <Divider />
-        <Item title='Classificação:' description={props.classification}/>
+        <Item 
+          title='Classificação:' 
+          description={props.classification}
+        />
       </Grid>
       <Grid cols='12 4 4'>
-        <ReactPlayer url={props.trailer} controls width='100%' height='230px' className='embed-responsive-item' />
+        <ReactPlayer 
+          url={props.trailer} 
+          controls width='100%' 
+          height='230px' 
+          className='embed-responsive-item' 
+        />
       </Grid>
     </div>
   </div>
