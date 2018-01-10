@@ -1,0 +1,20 @@
+$color-background-heading: #2e3436;
+$color-font-heading: #fff;
+
+$color-background-body: #fff;
+$color-font-body: #000;
+
+.panel-default {
+  .panel-heading {
+    background-color: $color-background-heading;
+    color: $color-font-heading;
+  }
+
+  .panel-body {
+    background-color: $color-background-body;
+    
+    p {
+      color: $color-font-body;
+    }
+  }
+}

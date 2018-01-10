@@ -1,0 +1,25 @@
+// $color-primary-background: #996699;
+$color-primary-background: #1976D2;
+$color-primary-text: #ffffff;
+
+body {
+    background-color: $color-primary-background;
+}
+
+header {
+    h2, small {
+        color: $color-primary-text;        
+    }
+}
+
+p {
+    color: $color-primary-text;        
+}
+
+// .media-left {
+//     img {
+//         width: 155px;
+//         height: 240px;
+//     }
+// }
+
