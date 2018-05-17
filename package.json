@@ -31,7 +31,7 @@
     "react-router-dom": "^4.2.2",
     "redux": "^4.0.0",
     "redux-multi": "^0.1.91",
-    "redux-promise": "^0.5.3",
+    "redux-promise": "^0.6.0",
     "redux-thunk": "^2.2.0",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
@@ -47,7 +47,7 @@
     "material-ui": "^1.0.0-beta.47",
     "material-ui-icons": "^1.0.0-beta.36",
     "react-loading": "^2.0.2",
-    "react-player": "^1.5.0",
+    "react-player": "^1.5.1",
     "typeface-roboto": "0.0.54"
   }
 }
