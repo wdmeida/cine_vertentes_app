@@ -1,5 +1,5 @@
 const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
@@ -45,13 +45,11 @@ module.exports = {
         ]
       }, {
         test: /\.s[ac]ss|.css$/,
-        use: ExtractTextPlugin.extract({
-          use: [
-            { loader: 'css-loader' }, 
-            { loader: 'sass-loader' }
-          ],
-          fallback: 'style-loader'
-        })
+        use: [
+          MiniCssExtractPlugin.loader, 
+          'css-loader',
+          'sass-loader'
+        ],
       }, {
         test: /\.(jpe?g|png|gif|svg)/,
         use: [
@@ -81,7 +79,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('styles.css'),
+    new MiniCssExtractPlugin({
+      filename: 'styles.css',
+    }),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',

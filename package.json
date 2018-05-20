@@ -4,7 +4,7 @@
   "description": "Aplicação para consumo da API do Cine Vertentes.",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors --inline --hot",
+    "dev": "webpack-dev-server --progress --colors --inline --hot --mode=development",
     "build": "webpack --progress -p"
   },
   "author": "Wagner Almeida",
@@ -23,6 +23,7 @@
     "file-loader": "^1.1.11",
     "font-awesome": "^4.7.0",
     "image-webpack-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
